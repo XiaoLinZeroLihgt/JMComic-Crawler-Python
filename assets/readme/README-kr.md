@@ -19,6 +19,7 @@
 [![GitHub latest releases](https://img.shields.io/github/v/release/hect0x7/JMComic-Crawler-Python?color=blue&label=version)](https://github.com/hect0x7/JMComic-Crawler-Python/releases/latest)
 [![PyPI - Downloads](https://img.shields.io/pypi/dm/jmcomic?style=flat&color=hotpink)](https://pepy.tech/projects/jmcomic)
 [![Licence](https://img.shields.io/github/license/hect0x7/JMComic-Crawler-Python?color=red)](https://github.com/hect0x7/JMComic-Crawler-Python)
+[![Used by](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2Fhect0x7%2Fhect0x7%2Fused-by%2Fmanifest.json&query=%24.public_dependents&label=used%20by&color=6f42c1&style=flat)](https://github.com/hect0x7/JMComic-Crawler-Python/network/dependents)
 
 </div>
 
@@ -52,9 +53,10 @@
 
 - 로그인
 - 앨범 검색 (모든 검색 매개변수 지원)
-- 이미지 다운로드 및 복호화
+- 앨범 댓글 가져오기 (답글 및 스포일러 표시 포함)
 - 카테고리 / 랭킹
-- 앨범 / 챕터(에피소드) 세부 정보
+- 앨범 / 챕터(에피소드) 세부 정보 가져오기
+- 이미지 다운로드 및 복호화
 - 개인 즐겨찾기
 - 인터페이스 암호화 및 복호화 (APP API)
 
@@ -213,9 +215,9 @@ jmv 350234 -y
 
 ## 프로젝트의 특징
 
-- **Async 및 Sync 두 가지 API 지원**
 - **Cloudflare 크롤러 방지 수칙 우회**
 - **금만(1.6.3) APP 인터페이스 최근의 암호화/복호화 알고리즘 완벽 지원**
+- **Async** 및 **Sync** 두 가지 API 지원
 - 다양한 사용 방법:
 
   - GitHub Actions: 웹페이지 내 바로 앨범 ID를 통하여 받을 수 있습니다. ([튜토리얼：GitHub Actions를 이용해 다운로드](../docs/sources/tutorial/1_github_actions.md))
@@ -223,6 +225,7 @@ jmv 350234 -y
   - Python 코드 구현: 가장 직관적이고 강력하며 최소한의 파이썬 기반 지식이 필요합니다.
 - **웹 인터페이스** 및 **모바일 인터페이스** 지원. 간단한 구성을 통한 전환 지원. (**모바일 구동환경에서의 IP제한을 돌파하고 뛰어난 호환이 됩니다, 웹은 특정 지역에서 제약받지만 성능은 최고입니다.**)
 - **자동 재접속(Retry) 및 도메인 전환 구조** 기본지원
+- 다운로드 작업 단위의 구조화된 로그 수집 지원
 - **멀티스레드 다운로드** (1이미지 당 1스레드를 통한 극단적인 빠른 스피드)
 - **강력한 구성 옵션**
 
@@ -268,3 +271,21 @@ jmv 350234 -y
     <img alt="Repo Card" src="https://github-readme-stats.vercel.app/api/pin/?username=tonquer&repo=JMComic-qt" />
   </picture>
 </a>
+
+## jmcomic을 사용하는 프로젝트
+
+<a href="https://github.com/hect0x7/hect0x7/tree/used-by">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hect0x7/hect0x7/used-by/showcase/ko-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hect0x7/hect0x7/used-by/showcase/ko-light.svg" />
+    <img width="100%" alt="jmcomic을 사용하는 프로젝트" src="https://raw.githubusercontent.com/hect0x7/hect0x7/used-by/showcase/ko-light.svg" />
+  </picture>
+</a>
+
+## Star History
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/hect0x7/hect0x7/output/profile/star-history-dark.svg" />
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/hect0x7/hect0x7/output/profile/star-history.svg" />
+  <img width="100%" alt="jmcomic 생태계 Star History" src="https://raw.githubusercontent.com/hect0x7/hect0x7/output/profile/star-history.svg" />
+</picture>
